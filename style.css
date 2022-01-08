@@ -6,5 +6,16 @@ body{
 input{
   display: block;
   margin: 0.5em 0;
-
+}
+label{
+  display: block;
+  margin: 1em;
+}
+input[type="radio"]{
+  display: inline;
+  padding: 0 0.5em;
+}
+input[type="checkbox"]{
+  display: inline;
+  margin: 0 0.5em;
 }
