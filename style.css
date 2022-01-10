@@ -1,21 +1,101 @@
 body{
   background-color: black;
   color: white;
-  font-family: Tahoma;
+  font-family: Calibri, serif;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 250px;
+  margin: 2rem auto;
 }
-input{
+fieldset{
+  border: none;
+}
+hr{
+  border-radius: 5em;
+  border: none;
+  border-top: 0.1em solid white;
+  width: 0 auto;
+}
+input, select{
   display: block;
-  margin: 0.5em 0;
+  outline: none;
 }
-label{
-  display: block;
-  margin: 1em;
+.the-labels{
+  border: 0.1em black solid;
+  background-color: #0f0f0f;
+  margin: 0.75em 0em;
+  padding:0.5em;
+  font-size: 1.28rem;
+  display:grid;
+  min-height: 6vh;
 }
-input[type="radio"]{
-  display: inline;
-  padding: 0 0.5em;
+.first-inputs{
+  background-color: #0f0f0f;
+  color: white;
+  height: 2rem;
+  border: none;
 }
-input[type="checkbox"]{
-  display: inline;
-  margin: 0 0.5em;
+.price-label{
+  margin: 0.75em 0;
+  padding:0.5em;
 }
+.select-input{
+  background-color: #0f0f0f;
+  outline: none;
+  border: none;
+  margin: 0.75em 0;
+  padding:0.5em 0;
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.select-input{
+  -webkit-appearance: none;
+  color: #a9a9a9;
+}
+option{
+  color: white;
+}
+.select-input option:checked{
+  color:pink;
+}
+.radio-labels{
+    font-size: initial; /* Changes back to orginial font size of the web-browser */
+    padding: 0.25em 0;
+}
+.radio-labels>input{
+  display: unset;
+}
+input[type="radio"]:checked{
+  background-color: red;
+}
+
+.checkbox-label>input{
+  display: unset;
+}
+
+/*
+.start-date-label{
+  border: 0.1em black solid;
+  background-color:#0f0f0f;
+  display:inline-block;
+}
+.end-date-label{
+  border: 0.1em black solid;
+  background-color:#0f0f0f;
+  display:inline-block;
+}
+input[type="date"]{
+  background-color: #0f0f0f;
+  color: white;
+  height: 2rem;
+  border: none;
+  vertical-align: middle;
+  outline: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+*/

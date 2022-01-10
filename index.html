@@ -1,63 +1,73 @@
-<!DOCTYPE html5>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <title>Create an Event</title>
   </head>
   <body>
     <h1 id="title">Create a new Event</h1>
     <form id="survey-form">
-      <p id="description">A personalized e-invite for your perfect event</p>
+      <p id="description">A personalized e-invite for your perxfect event</p>
       <fieldset>
-        <label id="name-label">Event Name:
-          <input type="text" name="name" id="name" placeholder="Enter an event name" required="required"/>
+        <label id="name-label" class="the-labels">Event Name:
+          <input type="text" name="name1" id="name" class="first-inputs" placeholder="Kevin's Bachelor party" required="required"/>
         </label>
-        <label>Place:
-          <input type="text" name="event-location"/>
+        <label class="the-labels">Venue:
+          <input type="text" name="event-location" class="first-inputs" placeholder="Air Canada Centre"/>
         </label>
-        <label>From date:
-          <input type="date" name="event-start-date"/>
-        </label>
-        <label>End date:
-          <input type="date" name="event-end-date"/>
-        </label>
-        <label id="email-label">Email:
-          <input type="email" id="email" name="email" placeholder="Enter your email" required="required"/>
+        <!--<div class="my-date"> <label class="date-label start-date-label">From date: <input type="date" name="event-start-date" class=""/> </label> <label class="date-label end-date-label">End date: <input type="date" name="event-end-date" class=""/>
+        </label> </div>-->
+        <label id="email-label" class="the-labels">Email:
+          <input type="email" id="email" name="email" class="first-inputs" placeholder="kevin@email.com" required="required"/>
         </label>
       </fieldset>
+      <fieldset><hr></fieldset>
       <fieldset>
-        <label>Price
-          <select id="dropdown">
-            <option value="1">Select one</option>
+        <label class="the-labels price-label">Price
+          <select id="dropdown" class="select-input">
+            <option value="1">Select one...</option>
             <option value="2">Basic - $20</option>
             <option value="3">Elite - $40</option>
             <option value="4">VIP - $50</option>
           </select>
         </label>
-        <label id="number-label">Max Number of attendees:
-          <input type="number" name="event-number" id="number" max="10" min="5" placeholder="Enter an max attendees" required="required" pattern="[0-9]"/>
-        </label>
-        <label>Event Type:
-          <input type="radio" name="public-private" value="1"/>
-          Public
-          <input type="radio" name="public-private" value="2"/>
-          Private
-        </label>
-        <label>Select one or more meal plans:
-          <input type="checkbox" name="checkbox1" value="1"/>Vegan
-          <input type="checkbox" name="checkbox1" value="2"/>Breakfast
-          <input type="checkbox" name="checkbox1" value="3"/>Indian
+        <label id="number-label" class="the-labels">Number of attendees:
+          <input type="number" name="event-number" class="first-inputs" id="number" max="10" min="5" placeholder="6" required="required" pattern="[0-9]"/>
         </label>
       </fieldset>
+      <fieldset><hr></fieldset>
       <fieldset>
-        <label>Event Cover Photo
+        <label class="the-labels">Event Type:
+          <label class="radio-labels">
+            <input type="radio" id="public-radio" name="public-private" value="1"/>
+            Public
+          </label>
+          <label class="radio-labels">
+            <input type="radio" id="private-radio" name="public-private" value="2"/>
+            Private
+          </label>
+        </label>
+        <label class="the-labels">Select one or more meal plans:
+          <label class="checkbox-label">
+            <input type="checkbox" name="checkbox1" value="1"/>Vegan
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="checkbox1" value="1"/>Vegetarian
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="checkbox1" value="1"/>Indian
+          </label>
+        </label>
+      </fieldset>
+      <fieldset><hr></fieldset>
+      <fieldset>
+        <label class="the-labels ">Event Cover Photo
           <input type="file" name="event-photo" id="event-photo"/>
         </label>
+        <label class="the-labels ">Additional Comments
+          <textarea name="comments" rows="5" cols="50" id=""></textarea>
+        </label>
       </fieldset>
-      <label>Additional Comments
-        <textarea name="comments" rows="5" cols="50" id=""></textarea>
-      </label>
       <input type="submit" id="submit" value="Submit"/>
     </form>
   </body>
